@@ -26,6 +26,10 @@ urlpatterns = [
 
     # URL patterns for HTML response by using FBV and CBV
     path('htmlByFbv/',htmlByFbv,name='htmlByFbv'),
-    path('HtmlByCbv/',HtmlByCbv.as_view(),name='HtmlByCbv')
+    path('HtmlByCbv/',HtmlByCbv.as_view(),name='HtmlByCbv'),
+
+    # URL patterns for insert the data using FBV and CBV
+    path('insert_data_fbv/',insert_data_fbv,name='insert_data_fbv'),
+    path('InsertDataCbv/',InsertDataCbv.as_view(),name='InsertDataCbv')
 
 ]
