@@ -22,6 +22,10 @@ urlpatterns = [
 
     #url patterns for string response by using FBV and CBV
     path('stirngByFbv/',stirngByFbv,name='stirngByFbv'),
-    path('StringByCbv/',StringByCbv.as_view(),name='StringByCbv')
+    path('StringByCbv/',StringByCbv.as_view(),name='StringByCbv'),
+
+    # URL patterns for HTML response by using FBV and CBV
+    path('htmlByFbv/',htmlByFbv,name='htmlByFbv'),
+    path('HtmlByCbv/',HtmlByCbv.as_view(),name='HtmlByCbv')
 
 ]
