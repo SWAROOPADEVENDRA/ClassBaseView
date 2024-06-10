@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 from django.http import HttpResponse
 
-from django.views.generic import View
+from django.views.generic import View,TemplateView
 
 from app.forms import *
 
@@ -51,3 +51,7 @@ class InsertDataCbv(View):
             return HttpResponse('Insert the data successfully')
         else:
             return HttpResponse('Invalid data')
+
+
+class Template_view(TemplateView):
+    template_name='Template_view.html'

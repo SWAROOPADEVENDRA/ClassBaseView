@@ -30,6 +30,9 @@ urlpatterns = [
 
     # URL patterns for insert the data using FBV and CBV
     path('insert_data_fbv/',insert_data_fbv,name='insert_data_fbv'),
-    path('InsertDataCbv/',InsertDataCbv.as_view(),name='InsertDataCbv')
+    path('InsertDataCbv/',InsertDataCbv.as_view(),name='InsertDataCbv'),
+
+    # URL pattern for Template view
+    path('Template_view/',Template_view.as_view(),name='Template_view')
 
 ]
